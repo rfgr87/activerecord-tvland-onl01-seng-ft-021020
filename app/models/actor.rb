@@ -7,4 +7,8 @@ class Actor < ActiveRecord::Base
     fullname
   end
   
+  def list_roles
+    list = [self.full_name, self.shows].join(" - ")
+    list
+  end
 end
