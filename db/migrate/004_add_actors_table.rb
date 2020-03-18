@@ -1,5 +1,6 @@
 class AddActorsTable < ActiveRecord::Migration[5.1]
   def change
-    create_table :actors , :network_id, :integer
+    create_table :actors do |t|
+      t.string , :network_id, :integer
   end
 end
